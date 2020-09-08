@@ -1,0 +1,52 @@
+.about {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__content {
+    width: 45%;
+    padding-top: gutter(8);
+
+    @include media("<md") {
+      width: 100%;
+      padding-top: 0;
+      margin-top: - gutter(8)
+    }
+  }
+
+  &__photo {
+    width: 55%;
+    height: gutter(60);
+    padding-left: gutter(14);
+    overflow: hidden;
+
+    @include media("<md") {
+      width: 100%;
+      padding-left: 0;
+      margin-top: gutter(8);
+      height: gutter(50);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 90%;
+    transition: $transition * 2;
+    opacity: 0.85;
+
+    &:hover,
+    &--hover {
+      transform: scale(1.02);
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    margin-left: gutter(16);
+
+    @include media("<md") {
+      margin-left: 0;
+    }
+  }
+}

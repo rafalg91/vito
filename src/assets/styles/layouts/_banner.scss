@@ -1,0 +1,24 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 180px);
+  overflow: hidden;
+
+  &__bg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: top right;
+    opacity: 0.25;
+    transform: scale(1.2);
+    animation: animate-bg 10s;
+  }
+
+  &__content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: gutter(73);
+    padding: gutter(2) 0 gutter(4);
+  }
+}

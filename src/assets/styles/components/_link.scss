@@ -1,0 +1,10 @@
+.link {
+  color: darken($white, 15);
+  text-decoration: underline;
+  font-weight: $font-medium;
+
+  &:hover {
+    color: $white;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,35 @@
+.button {
+  font-size: 16px;
+  color: $white;
+  text-transform: uppercase;
+  border: 1px solid $white;
+  border-radius: 0;
+  background: transparent;
+  padding: gutter(2.5) gutter(5);
+  transition: $transition;
+
+  @include media("<md") {
+    font-size: 14px;
+    padding: gutter(2) gutter(3);
+  }
+
+  &:hover {
+    color: $black;
+    background: $white;
+  }
+
+  &--small {
+    font-size: 15px;
+    text-transform: none;
+    color: $white;
+    padding: gutter(1) gutter(2);
+    border-color: rgba($white, 0.6);
+
+    &:hover {
+      background: $black;
+      color: $white;
+      transform: translateX(5px);
+      border-color: $white;
+    }
+  }
+}

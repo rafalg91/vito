@@ -1,0 +1,44 @@
+// libraries
+@import '~bulma';
+@import '~@animated-burgers/burger-slip/dist/styles.css';
+@import "node_modules/include-media/dist/include-media.scss";
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
+
+@font-face {
+  font-family: 'Butler';
+  font-display: block;
+  src: url('../fonts/Butler_Regular.otf');
+  font-weight: 400;
+}
+
+// common
+@import "common/variables";
+@import "common/functions";
+@import "common/animations";
+@import "common/typography";
+@import "common/global";
+@import "common/mixins";
+
+// components
+@import "components/bg-img";
+@import "components/button";
+@import "components/container";
+@import "components/link";
+@import "components/section";
+@import "components/spinner";
+
+// partials
+@import "partials/contact";
+@import "partials/footer";
+@import "partials/header";
+
+// layouts
+@import "layouts/about";
+@import "layouts/banner";
+@import "layouts/blog";
+@import "layouts/gallery";
+@import "layouts/hero";
+@import "layouts/projects";

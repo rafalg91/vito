@@ -1,0 +1,78 @@
+.headline {
+  margin: 0 0 0.6em 0;
+  line-height: 1.1;
+  font-family: $font-title;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 40px;
+  color: $white;
+
+  &--center {
+    text-align: center;
+    font-size: 50px;
+  }
+}
+
+.title {
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: $white;
+  font-weight: $font-medium;
+  font-family: $font-title;
+  text-transform: uppercase;
+
+  &--small {
+    font-family: $font-main;
+    font-size: 20px;
+    text-transform: none;
+  }
+
+  &--center {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  &--offset {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: block;
+      width: gutter(12);
+      margin-right: gutter(4);
+      height: gutter(0.2);
+      background-color: $white;
+
+      @include media("<md") {
+        display: none;
+      }
+    }
+  }
+}
+
+.text {
+  color: $white;
+  font-weight: $font-regular;
+  font-family: $font-main;
+  font-size: 16px;
+  line-height: 29px;
+
+  @include media("<md") {
+    font-size: 14px;
+  }
+
+  &--strong {
+    font-weight: $font-medium;
+  }
+
+  &--small {
+    font-size: 12px;
+  }
+}
+
+.button {
+  margin-top: gutter(2);
+}

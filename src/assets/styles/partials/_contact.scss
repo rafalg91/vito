@@ -1,0 +1,46 @@
+.contact {
+  //border-top: 1px solid rgba($white, 0.2);
+  padding: gutter(10) gutter(3) 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: rgba($white, 0.2);
+    width: calc(100% - 60px);
+    display: block;
+    margin: auto;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: gutter(3);
+  }
+
+  @include media("<md") {
+    grid-template-columns: 1fr;
+    gap: gutter(6);
+  }
+
+  &__title {
+    margin-bottom: gutter(1.5) !important;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      margin: gutter(0.25) 0;
+    }
+  }
+
+  &__banner {
+    height: gutter(30);
+    opacity: 0.4;
+
+    @include media("<md") {
+      height: gutter(20);
+    }
+  }
+}

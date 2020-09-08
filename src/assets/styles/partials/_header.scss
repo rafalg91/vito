@@ -1,0 +1,44 @@
+.header {
+  padding: gutter(5) 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__brand {
+    z-index: 500;
+  }
+
+  &__burger {
+    z-index: 500;
+  }
+
+  &__nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+    width: 0;
+    height: 100vh;
+    background-color: $black;
+    z-index: 200;
+
+    &--active {
+      width: 100%;
+      height: 100vh;
+      animation: open-nav 0.5s;
+    }
+
+    a {
+      color: $white;
+      padding: gutter(1) 0;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
