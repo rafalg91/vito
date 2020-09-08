@@ -25,12 +25,7 @@
   }
 
   &__title {
-    font-size: 50px;
     font-weight: $font-medium;
-
-    @include media("<md") {
-      font-size: 40px;
-    }
   }
 
   &__desc {

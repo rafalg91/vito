@@ -5,8 +5,12 @@
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-size: 40px;
+  font-size: 50px;
   color: $white;
+
+  @include media("<md") {
+    font-size: 35px;
+  }
 
   &--center {
     text-align: center;
@@ -22,10 +26,18 @@
   font-family: $font-title;
   text-transform: uppercase;
 
+  @include media("<md") {
+    font-size: 28px;
+  }
+
   &--small {
     font-family: $font-main;
     font-size: 20px;
     text-transform: none;
+
+    @include media("<md") {
+      font-size: 16px;
+    }
   }
 
   &--center {
@@ -62,6 +74,7 @@
 
   @include media("<md") {
     font-size: 14px;
+    line-height: 26px;
   }
 
   &--strong {

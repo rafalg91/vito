@@ -9,6 +9,7 @@
 
   @include media("<md") {
     flex-direction: column-reverse;
+    padding-bottom: gutter(2);
   }
 
   &__image {
