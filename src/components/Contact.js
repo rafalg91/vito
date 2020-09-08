@@ -1,5 +1,5 @@
 import React from 'react'
-import banner from '../../assets/images/art/3.jpg'
+import banner from '../assets/images/art/3.jpg'
 
 const Contact = () => {
   const bannerStyle = {
@@ -11,7 +11,7 @@ const Contact = () => {
 
   return (
     <>
-      <section className="section">
+      <section className="section pt-0">
         <div className="container contact">
           <div>
             <h2 className="title contact__title">

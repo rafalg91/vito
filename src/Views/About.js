@@ -5,7 +5,6 @@ const About = () => (
   <>
     <div className="container">
       <section className="banner">
-        <img className="banner__bg" src={about} alt="O mnie" />
         <div className="banner__content">
           <h2 className="headline">O mnie</h2>
           <div className="text">
@@ -24,6 +23,9 @@ const About = () => (
               powinna młodź dla zabawki Bo nie daje z dozorcą, potem najwyższych.
             </p>
           </div>
+        </div>
+        <div class="banner__image">
+          <img className="banner__bg" src={about} alt="O mnie" />
         </div>
       </section>
     </div>
