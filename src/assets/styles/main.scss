@@ -16,6 +16,7 @@
 
 // common
 @import "common/variables";
+@import "common/helpers";
 @import "common/functions";
 @import "common/animations";
 @import "common/typography";
@@ -26,6 +27,7 @@
 @import "components/bg-img";
 @import "components/button";
 @import "components/container";
+@import "components/lightbox";
 @import "components/link";
 @import "components/section";
 @import "components/spinner";
