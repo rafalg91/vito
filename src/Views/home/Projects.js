@@ -3,12 +3,10 @@ import HomeContext from "../../HomeContext"
 import { categories, projects } from "../../api"
 import Nav from "../home/Projects/Nav"
 import Grid from "../home/Projects/Grid"
-import Modal from "../home/Projects/Modal"
+// import Lightbox from "../../components/Lightbox"
 
 const Projects = () => {
   const [cat, setCat] = useState(2)
-  const [modal, setModal] = useState(false)
-  const [lightbox, setLightbox] = useState(null)
   const [filteredProjects, setFilteredProjects] = useState([])
   const home = useContext(HomeContext)
 
@@ -28,20 +26,20 @@ const Projects = () => {
     setProjects(id)
   }
 
-  const openModal = (img) => {
-    setModal(!modal)
-    setLightbox(img)
-    document.body.parentElement.classList.add('lock');
-  }
+  // const openModal = (img) => {
+  //   setModal(!modal)
+  //   setLightboxTab(img)
+  //   document.body.parentElement.classList.add('lock');
+  // }
 
-  const closeModal = () => {
-    setModal(false)
-    document.body.parentElement.classList.remove('lock');
-  }
+  // const closeModal = () => {
+  //   setModal(false)
+  //   document.body.parentElement.classList.remove('lock');
+  // }
 
   return (
     <>
-      {modal && <Modal close={closeModal} image={lightbox} />}
+      {/* {modal && <Lightbox close={closeModal} image={lightboxTab} />} */}
       <section className="section">
         <div className="container">
           <h2 className="headline">
@@ -52,7 +50,7 @@ const Projects = () => {
           </p>
           <div className="projects">
             <Nav categories={categories} cat={cat} toggle={toggle} />
-            <Grid projects={filteredProjects} openModal={openModal} />
+            <Grid projects={filteredProjects} />
           </div>
         </div>
       </section>
