@@ -10,11 +10,16 @@
   align-items: center;
   justify-content: center;
 
-  &__image {
-    max-width: 90vw;
-    max-height: 90vh;
+  &__content {
+    max-width: 80vw;
+    max-height: 80vh;
     object-fit: contain;
     animation: open-modal 0.8s;
+
+    @include media ("<md") {
+      max-width: 90vw;
+      max-height: 90vh;
+    }
   }
 
   &__close {

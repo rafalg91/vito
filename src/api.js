@@ -92,6 +92,7 @@ export const projects = [
     title: "Projekt 3",
     desc: "opis projektu",
     url: art3,
+    yt: null,
     category: {
       id: 4,
       name: "Artystyczne",
@@ -105,6 +106,7 @@ export const projects = [
     title: "Projekt",
     desc: "opis projektu",
     url: drone1,
+    yt: null,
     category: {
       id: 2,
       name: "Dron",
@@ -118,6 +120,7 @@ export const projects = [
     title: "Projekt",
     desc: "opis projektu",
     url: drone2,
+    yt: null,
     category: {
       id: 2,
       name: "Dron",
@@ -131,6 +134,7 @@ export const projects = [
     title: "Projekt",
     desc: "opis projektu",
     url: drone3,
+    yt: null,
     category: {
       id: 2,
       name: "Dron",
@@ -144,6 +148,7 @@ export const projects = [
     title: "Projekt",
     desc: "opis projektu",
     url: drone4,
+    yt: null,
     category: {
       id: 2,
       name: "Dron",
@@ -157,6 +162,7 @@ export const projects = [
     title: "Projekt",
     desc: "opis projektu",
     url: drone5,
+    yt: null,
     category: {
       id: 2,
       name: "Dron",
@@ -170,6 +176,7 @@ export const projects = [
     title: "Projekt",
     desc: "opis projektu",
     url: drone6,
+    yt: null,
     category: {
       id: 2,
       name: "Dron",
@@ -183,6 +190,7 @@ export const projects = [
     title: "Projekt",
     desc: "opis projektu",
     url: commercial1,
+    yt: null,
     category: {
       id: 3,
       name: "Komercyjne",
@@ -196,6 +204,7 @@ export const projects = [
     title: "Projekt",
     desc: "opis projektu",
     url: commercial2,
+    yt: null,
     category: {
       id: 3,
       name: "Komercyjne",
@@ -209,6 +218,7 @@ export const projects = [
     title: "Projekt",
     desc: "opis projektu",
     url: commercial3,
+    yt: null,
     category: {
       id: 3,
       name: "Komercyjne",
@@ -222,6 +232,7 @@ export const projects = [
     title: "Projekt",
     desc: "opis projektu",
     url: commercial4,
+    yt: null,
     category: {
       id: 3,
       name: "Komercyjne",
@@ -235,6 +246,7 @@ export const projects = [
     title: "Projekt",
     desc: "opis projektu",
     url: commercial5,
+    yt: null,
     category: {
       id: 3,
       name: "Komercyjne",
@@ -248,12 +260,13 @@ export const projects = [
     title: "Projekt",
     desc: "opis projektu",
     url: commercial6,
+    yt: 'https://www.youtube.com/watch?v=lGBT7ibC9H4',
     category: {
       id: 3,
       name: "Komercyjne",
     },
     type: {
-      name: "image",
+      name: "video",
     },
   },
 ]
