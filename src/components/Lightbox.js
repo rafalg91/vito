@@ -20,7 +20,7 @@ const Lightbox = ({ closeModal, index, tab }) => {
   }
 
   const prev = () => {
-    const newIndex = currentIndex + 1
+    const newIndex = currentIndex - 1
 
     if (currentIndex > 0) {
       setImage(tab[newIndex])
