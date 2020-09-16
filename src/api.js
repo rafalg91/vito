@@ -8,6 +8,10 @@ import drone3 from "./assets/images/drone/3.jpg"
 import drone4 from "./assets/images/drone/4.jpg"
 import drone5 from "./assets/images/drone/5.jpg"
 import drone6 from "./assets/images/drone/6.jpg"
+import drone7 from "./assets/images/drone/7.jpg"
+import drone8 from "./assets/images/drone/8.jpg"
+import drone9 from "./assets/images/drone/9.jpg"
+import drone10 from "./assets/images/drone/10.jpg"
 import commercial1 from "./assets/images/commercial/1.jpg"
 import commercial2 from "./assets/images/commercial/2.jpg"
 import commercial3 from "./assets/images/commercial/3.jpg"
@@ -189,6 +193,62 @@ export const projects = [
     id: 10,
     title: "Projekt",
     desc: "opis projektu",
+    url: drone7,
+    yt: null,
+    category: {
+      id: 2,
+      name: "Dron",
+    },
+    type: {
+      name: "image",
+    },
+  },
+  {
+    id: 11,
+    title: "Projekt",
+    desc: "opis projektu",
+    url: drone8,
+    yt: null,
+    category: {
+      id: 2,
+      name: "Dron",
+    },
+    type: {
+      name: "image",
+    },
+  },
+  {
+    id: 12,
+    title: "Projekt",
+    desc: "opis projektu",
+    url: drone9,
+    yt: null,
+    category: {
+      id: 2,
+      name: "Dron",
+    },
+    type: {
+      name: "image",
+    },
+  },
+  {
+    id: 13,
+    title: "Projekt",
+    desc: "opis projektu",
+    url: drone10,
+    yt: null,
+    category: {
+      id: 2,
+      name: "Dron",
+    },
+    type: {
+      name: "image",
+    },
+  },
+  {
+    id: 14,
+    title: "Projekt",
+    desc: "opis projektu",
     url: commercial1,
     yt: null,
     category: {
@@ -200,7 +260,7 @@ export const projects = [
     },
   },
   {
-    id: 11,
+    id: 15,
     title: "Projekt",
     desc: "opis projektu",
     url: commercial2,
@@ -214,7 +274,7 @@ export const projects = [
     },
   },
   {
-    id: 12,
+    id: 16,
     title: "Projekt",
     desc: "opis projektu",
     url: commercial3,
@@ -228,7 +288,7 @@ export const projects = [
     },
   },
   {
-    id: 13,
+    id: 17,
     title: "Projekt",
     desc: "opis projektu",
     url: commercial4,
@@ -242,7 +302,7 @@ export const projects = [
     },
   },
   {
-    id: 14,
+    id: 18,
     title: "Projekt",
     desc: "opis projektu",
     url: commercial5,
@@ -256,7 +316,7 @@ export const projects = [
     },
   },
   {
-    id: 15,
+    id: 19,
     title: "Projekt",
     desc: "opis projektu",
     url: commercial6,

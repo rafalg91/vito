@@ -3,7 +3,6 @@ import HomeContext from "../../HomeContext"
 import { categories, projects } from "../../api"
 import Nav from "../home/Projects/Nav"
 import Grid from "../home/Projects/Grid"
-// import Lightbox from "../../components/Lightbox"
 
 const Projects = () => {
   const [cat, setCat] = useState(2)
@@ -26,20 +25,8 @@ const Projects = () => {
     setProjects(id)
   }
 
-  // const openModal = (img) => {
-  //   setModal(!modal)
-  //   setLightboxTab(img)
-  //   document.body.parentElement.classList.add('lock');
-  // }
-
-  // const closeModal = () => {
-  //   setModal(false)
-  //   document.body.parentElement.classList.remove('lock');
-  // }
-
   return (
     <>
-      {/* {modal && <Lightbox close={closeModal} image={lightboxTab} />} */}
       <section className="section">
         <div className="container">
           <h2 className="headline">
@@ -50,7 +37,7 @@ const Projects = () => {
           </p>
           <div className="projects">
             <Nav categories={categories} cat={cat} toggle={toggle} />
-            <Grid projects={filteredProjects} />
+            <Grid projects={filteredProjects.slice(-6)} />
           </div>
         </div>
       </section>

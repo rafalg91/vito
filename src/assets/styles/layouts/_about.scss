@@ -6,10 +6,10 @@
     width: 45%;
     padding-top: gutter(8);
 
-    @include media("<md") {
+    @include media("<xl") {
       width: 100%;
       padding-top: 0;
-      margin-top: - gutter(8)
+      margin-top: - gutter(8);
     }
   }
 
@@ -19,7 +19,7 @@
     padding-left: gutter(14);
     overflow: hidden;
 
-    @include media("<md") {
+    @include media("<xl") {
       width: 100%;
       padding-left: 0;
       margin-top: gutter(8);
@@ -45,7 +45,7 @@
   &__text {
     margin-left: gutter(16);
 
-    @include media("<md") {
+    @include media("<xl") {
       margin-left: 0;
     }
   }

@@ -9,6 +9,7 @@ const Lightbox = ({ closeModal, index, tab }) => {
 
   useEffect(() => {
     document.body.parentElement.classList.add("lock")
+    return () => document.body.parentElement.classList.remove("lock")
   }, [])
 
   const next = () => {
@@ -37,7 +38,6 @@ const Lightbox = ({ closeModal, index, tab }) => {
 
   const close = () => {
     closeModal()
-    document.body.parentElement.classList.remove("lock")
   }
 
   return (

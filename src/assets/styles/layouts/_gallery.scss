@@ -4,6 +4,10 @@
   gap: gutter(2);
   margin-top: gutter(5);
 
+  @include media("<xl") {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   @include media("<lg") {
     grid-template-columns: repeat(2, 1fr);
   }
