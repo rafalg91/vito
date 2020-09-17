@@ -1,7 +1,7 @@
 import React from "react"
 
 const Contact = () => (
-  <div className="container section">
+  <div id="contact" className="container section">
     <h2 className="headline headline--center">
       Kontakt
     </h2>

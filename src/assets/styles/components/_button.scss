@@ -18,6 +18,37 @@
     background: $white;
   }
 
+  &--arrow {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 15px;
+    font-weight: $font-bold;
+
+    &::after {
+      content: '';
+      height: 12px;
+      width: gutter(3);
+      background-image: url("../../icons/arrow.svg");
+      background-position: center right;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-left: 15px;
+      transition: width .3s ease-in-out;
+    }
+
+    &:hover {
+      background: transparent;
+      color: $white;
+      opacity: 0.8;
+      transform: translateY(2px);
+
+      &::after {
+        width: gutter(4);
+      }
+    }
+  }
+
   &--small {
     font-size: 15px;
     text-transform: none;

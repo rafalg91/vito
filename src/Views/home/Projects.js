@@ -15,7 +15,7 @@ const Projects = () => {
 
   const setProjects = (id) => {
     setFilteredProjects(
-      projects.filter((project) => project.category.id === id)
+      projects.filter((project) => project.category.id === id).slice(-6).reverse()
     )
   }
 
@@ -37,7 +37,7 @@ const Projects = () => {
           </p>
           <div className="projects">
             <Nav categories={categories} cat={cat} toggle={toggle} />
-            <Grid projects={filteredProjects.slice(-6)} />
+            <Grid projects={filteredProjects} />
           </div>
         </div>
       </section>

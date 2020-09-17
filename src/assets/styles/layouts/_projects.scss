@@ -1,5 +1,5 @@
 .projects {
-  margin: gutter(6) 0;
+  margin: gutter(6) auto 0;
 
   &__nav {
     display: inline-flex;
@@ -7,7 +7,6 @@
   }
 
   &__button {
-    //text-transform: uppercase;
     font-family: $font-main;
     font-size: 16px;
     font-weight: $font-regular;
@@ -44,7 +43,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: gutter(4);
-    margin: gutter(5) 0;
+    margin: gutter(4) 0 0;
 
     @include media("<lg") {
       grid-template-columns: repeat(2, 1fr);

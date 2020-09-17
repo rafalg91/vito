@@ -1,4 +1,18 @@
 .footer {
-  padding: gutter(4) 0;
+  padding: gutter(3) 0;
   background-color: $black;
+
+  @include media("<md") {
+    padding: gutter(2) 0;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media("<md") {
+      display: block;
+    }
+  }
 }

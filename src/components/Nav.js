@@ -29,9 +29,10 @@ const Nav = ({ active, toggle }) => {
           {page.title}
         </NavLink>
       ))}
-      <NavLink to="/kontakt">
+      <a href="#contact">Kontakt</a>
+      {/* <NavLink to="/kontakt">
         Kontakt
-      </NavLink>
+      </NavLink> */}
     </nav>
   )
 }

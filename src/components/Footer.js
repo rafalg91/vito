@@ -5,8 +5,8 @@ const Footer = () => (
   <>
     <Contact />
     <div className="footer">
-      <div className="container">
-        <div className="text text--strong">
+      <div className="container footer__row">
+        <div className="text text--strong footer__copyright">
           © Copyright 2020
         </div>
         <div className="text text--small">

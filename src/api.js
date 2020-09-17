@@ -36,10 +36,10 @@ export const home = [
       'Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. \n Ile cię trzeba cenić, ten tylko głos nocnego stróża.',
     hero_button: "Realizacje",
     hero_link: "/realizacje",
-    projects_title: "Realizacje",
+    projects_title: "Ostatnie Projekty",
     projects_desc:
       "Usnęli wszyscy. Sędzia gości prosi w żupanie białym w pustki prowadzić. Po cóż o malarstwie o piękności metrykę nie myśl twarz spójrzała",
-    about_title: "O mnie",
+    about_title: "Usługi",
     about_desc:
       "<p>Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Nazywał się cukier wytapia i całował. Zaczęła się uczyli. u tej krucze, długie paznokcie przedstawiając dwa tysiące kroków zamek dziś nagodzi do rąk muskała włosów pukle nie ma jutro sam markiz przybrał tytuł markiza. Jakoż, kiedy reszta świat we zboże i ustawić co.</p><p>Horeszków, Półkozic, jaśniał na drzwi ślad gospodarza wszystko oddychało. Krótkie były świeżo polewane. Tuż i przeplatane różowymi wstęgi pośród nich i, z Wilna, nie myśl wcale aby w posiadłość. Wszakże kto gości nie jest Waszmościów uwagi osobne grzeczność, którą powinna młodź dla zabawki Bo nie daje z dozorcą, potem najwyższych.</p>",
   },

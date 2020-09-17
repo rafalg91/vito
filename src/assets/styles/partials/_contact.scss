@@ -1,13 +1,13 @@
 .contact {
   //border-top: 1px solid rgba($white, 0.2);
-  padding: gutter(10) gutter(3) 0;
+  padding: gutter(9) gutter(3) 0;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   position: relative;
 
   &::before {
     content: "";
-    background-color: rgba($white, 0.2);
+    background-color: rgba($white, 0.1);
     width: calc(100% - 60px);
     display: block;
     margin: auto;
@@ -36,7 +36,7 @@
   }
 
   &__banner {
-    height: gutter(30);
+    height: gutter(20);
     opacity: 0.4;
 
     @include media("<md") {
