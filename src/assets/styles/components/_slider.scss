@@ -1,0 +1,7 @@
+.slider {
+  opacity: 0.85;
+
+  &--active {
+    animation: changeImg 3s;
+  }
+}

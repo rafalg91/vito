@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react"
+import classNames from "classnames/dedupe"
 
 const Slider = ({ images }) => {
   const [currentSlide, setCurrentSlide] = useState(images[0])
+  const [statusClass, setStatusClass] = useState(false)
 
   useEffect(() => {
     const lastImage = images.length - 1
@@ -9,14 +11,19 @@ const Slider = ({ images }) => {
 
     setInterval(() => {
       i === lastImage ? (i = 0) : i++
+      setStatusClass(true)
       setCurrentSlide(images[i])
-    }, 4000)
+
+      setTimeout(() => {
+        setStatusClass(false)
+      },4000)
+    }, 5000)
     // eslint-disable-next-line
   }, [])
 
   return (
     <>
-      <img src={currentSlide.url} alt="O mnie" />
+      <img className={classNames('slider', {'slider--active' : statusClass})} src={currentSlide.url} alt="O mnie" />
     </>
   )
 }
