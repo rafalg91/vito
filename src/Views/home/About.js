@@ -3,7 +3,9 @@ import { NavLink } from "react-router-dom"
 import classNames from "classnames/dedupe"
 //import Parser from 'html-react-parser';
 import HomeContext from "../../HomeContext"
-import image from "../../assets/images/vito2.jpg"
+//import image from "../../assets/images/vito2.jpg"
+import Slider from "../../components/Slider"
+import { sliderAbout } from "../../api"
 
 const About = () => {
   const [hover, setHover] = useState(false)
@@ -58,8 +60,9 @@ const About = () => {
               </NavLink>
             </div>
           </div>
-          <div className="about__photo">
-            <img className={classNames('about__img', {'about__img--hover' : hover})} src={image} alt="O mnie" />
+          <div className={classNames('about__photo', {'about__photo--hover' : hover})}>
+            {/* <img src={image} alt="O mnie" /> */}
+            <Slider images={sliderAbout} />
           </div>
         </div>
       </div>

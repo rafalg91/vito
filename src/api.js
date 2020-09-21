@@ -1,4 +1,7 @@
 import logo from "./assets/images/logo.png"
+import slider1 from "./assets/images/vito2.jpg"
+import slider2 from "./assets/images/vito3.jpg"
+import slider3 from "./assets/images/vito4.jpg"
 import art1 from "./assets/images/art/1.jpg"
 import art2 from "./assets/images/art/2.jpg"
 import art3 from "./assets/images/art/3.jpg"
@@ -42,6 +45,21 @@ export const home = [
     about_title: "Usługi",
     about_desc:
       "<p>Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Nazywał się cukier wytapia i całował. Zaczęła się uczyli. u tej krucze, długie paznokcie przedstawiając dwa tysiące kroków zamek dziś nagodzi do rąk muskała włosów pukle nie ma jutro sam markiz przybrał tytuł markiza. Jakoż, kiedy reszta świat we zboże i ustawić co.</p><p>Horeszków, Półkozic, jaśniał na drzwi ślad gospodarza wszystko oddychało. Krótkie były świeżo polewane. Tuż i przeplatane różowymi wstęgi pośród nich i, z Wilna, nie myśl wcale aby w posiadłość. Wszakże kto gości nie jest Waszmościów uwagi osobne grzeczność, którą powinna młodź dla zabawki Bo nie daje z dozorcą, potem najwyższych.</p>",
+  },
+]
+
+export const sliderAbout = [
+  {
+    id: 1,
+    url: slider1,
+  },
+  {
+    id: 2,
+    url: slider2,
+  },
+  {
+    id: 3,
+    url: slider3,
   },
 ]
 
